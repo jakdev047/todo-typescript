@@ -5,7 +5,7 @@ import { RootState, setAppName } from "./redux/rootReducer";
 import PostLanding from "./modules/posts";
 
 // url
-export const APIUrl = "https://jsonplaceholder.typicode.com";
+export const APIUrl = "http://localhost:8000";
 Axios.defaults.baseURL = APIUrl;
 
 function App() {

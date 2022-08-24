@@ -13,7 +13,7 @@ export default function PostLanding() {
 
   const getPostLanding = async () => {
     try {
-      const res = await axios.get(`/posts`);
+      const res = await axios.get(`/todos`);
       dispatch(setPostList(res?.data));
     } catch (error) {
       console.log(error);
