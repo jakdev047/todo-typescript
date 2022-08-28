@@ -7,10 +7,4 @@ export const rootReducer = combineReducers({
   posts: postsSlice?.reducer,
 });
 
-// localStorage
-export const { setAppName } = localStorageSlice.actions;
-
-// posts
-export const { setPostList } = postsSlice.actions;
-
 export type RootState = ReturnType<typeof rootReducer>;

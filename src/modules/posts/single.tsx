@@ -3,15 +3,21 @@ import { Post } from "./../../commonRedux/posts/type";
 
 type postProps = {
   post: Post;
+  deletePostHandler: (id: number) => void;
 };
 
-export default function SinglePost({ post }: postProps) {
+export default function SinglePost({
+  post: { id, text },
+  deletePostHandler,
+}: postProps) {
   return (
     <>
       <div>
         <button type="button">Incomplete</button>
-        {post?.text}
-        <button type="button">X</button>
+        {text}
+        <button type="button" onClick={() => deletePostHandler(id)}>
+          X
+        </button>
         {/* 
               <button type="button">Avg</button>
               <button type="button">Low</button>

@@ -1,8 +1,9 @@
 import React from "react";
 import { shallowEqual, useDispatch, useSelector } from "react-redux";
 import Axios from "axios";
-import { RootState, setAppName } from "./redux/rootReducer";
+import { RootState } from "./redux/rootReducer";
 import PostLanding from "./modules/posts";
+import { setAppName } from "./commonRedux/reduxForLocalStorage/slice";
 
 // url
 export const APIUrl = "http://localhost:8000";

@@ -14,3 +14,5 @@ export const localStorageSlice = createSlice({
     },
   },
 });
+
+export const { setAppName } = localStorageSlice.actions;
